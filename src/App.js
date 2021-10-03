@@ -1,23 +1,21 @@
-import { BrowserRouter } from "react-router-dom";
+import { Route, Switch } from "react-router-dom";
 import "./App.css";
-import Layout from "./hoc/Layout/Layout";
-import Hero from './components/Hero/Hero';
-import About from './components/About/About';
-import GetInTouch from './components/GetInTouch/GetInTouch';
-import Portfolio from './components/Portfolio/Portfolio';
-import Contact from './components/Contact/Contact';
+import Demo from "./components/Demo/Demo";
+import Home from "./components/Home/Home";
 
-function App() {
+function App(props) {
+  console.log(props);
   return (
-    <BrowserRouter>
-      <Layout>
-        <Hero />
-        <About />
-        <GetInTouch />
-        <Portfolio />
-        <Contact />
-      </Layout>
-    </BrowserRouter>
+    <div>
+      <Switch>
+        <Route exact path="/">
+          <Home />
+        </Route>
+        <Route exact path="/project/">
+          <Demo />
+        </Route>
+      </Switch>
+    </div>
   );
 }
 

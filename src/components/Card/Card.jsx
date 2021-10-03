@@ -23,7 +23,7 @@ const card = (props) => {
                     <div style={{ margin: '20px 2px' }}>
                         {
                             builtWithInitialValue ? cardBadgeContent.map(name => {
-                                return <CardBadge name={name} />;
+                                return <CardBadge key={name} name={name} />;
                             }) : null
                         }
                     </div>
