@@ -1,7 +1,7 @@
 import React from 'react';
 import { HashLink as Link } from 'react-router-hash-link';
 import { Col, Container, Row } from 'reactstrap';
-import HeroImage from './../../assets/images/Deconstructed robot-amico.png';
+import HeroImage from './../../assets/svgs/deconstructed-robot-animate.svg';
 import classes from './Hero.module.css';
 
 const Hero = () => {
