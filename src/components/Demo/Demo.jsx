@@ -7,8 +7,8 @@ import video from './../../assets/video/3. Arrow Functions.mp4';
 const Demo = () => {
     return (
         <div className={classes.Demo}>
-            <Container>
-                <ReactPlayer url={video} width="100%" height="50%" controls={true} />
+            <Container className={classes.Container}>
+                <ReactPlayer url={video} width="100%" height="100%" controls={true} />
             </Container>
         </div>
     )
