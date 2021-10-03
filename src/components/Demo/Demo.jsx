@@ -1,15 +1,16 @@
 import React from 'react'
-import Layout from '../../hoc/Layout/Layout'
+import { Container } from 'reactstrap'
+import classes from './Demo.module.css'
 
 const Demo = () => {
     return (
-        <>
-            <Layout>
-                <div>
-                    hooo
-                </div>
-            </Layout>
-        </>
+        <div className={classes.Demo}>
+            <Container>
+                <video>
+                    <source></source>
+                </video>
+            </Container>
+        </div>
     )
 }
 

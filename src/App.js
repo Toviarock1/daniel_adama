@@ -2,11 +2,12 @@ import { Route, Switch } from "react-router-dom";
 import "./App.css";
 import Demo from "./components/Demo/Demo";
 import Home from "./components/Home/Home";
+import Layout from "./hoc/Layout/Layout";
 
 function App(props) {
   console.log(props);
   return (
-    <div>
+    <Layout>
       <Switch>
         <Route exact path="/">
           <Home />
@@ -15,7 +16,7 @@ function App(props) {
           <Demo />
         </Route>
       </Switch>
-    </div>
+    </Layout>
   );
 }
 
