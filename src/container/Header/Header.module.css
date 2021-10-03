@@ -1,0 +1,46 @@
+* {
+  box-sizing: border-box;
+  border: 0.5px solid red;
+}
+
+.Header {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  background-color: white !important;
+}
+.Navbar {
+  height: 88px;
+  background-color: transparent !important;
+  transition: all 0.3s linear;
+}
+.NavbarScroll {
+  height: 88px;
+  background-color: white !important;
+  transition: all 0.3s linear;
+}
+.Logo {
+  width: 114px;
+}
+.NavItem {
+  padding: 10px 12px;
+}
+.NavItemLink {
+  color: #030303 !important;
+  text-decoration: none;
+}
+.NavItemLink:hover {
+  color: #1f12fd !important;
+}
+@media screen and (max-width: 990px) {
+  .Header {
+    margin-bottom: 88px;
+  }
+  .Collapse {
+    background-color: #fff;
+    margin-top: -17px;
+  }
+  .NavbarBtn{
+    margin-right: 20px;
+  }
+}

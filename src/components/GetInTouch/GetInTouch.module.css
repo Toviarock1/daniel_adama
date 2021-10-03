@@ -1,0 +1,30 @@
+.GetInTouch {
+  padding: 100px;
+  background-image: url("./../../assets/images/page-bg-1.jpg");
+  background-position: center;
+  background-color: #1f12fd;
+  text-align: center;
+}
+.GetInTouch p {
+  font-size: 26px;
+  font-weight: 400;
+  margin-bottom: 30px;
+  color: #fff;
+}
+.GetInTouchBtn {
+  padding: 12px 20px;
+  font-weight: 700;
+  border-radius: 35px;
+  background-color: #fff;
+  box-shadow: 0 7px 51px 0 rgba(31, 18, 253, 0.12);
+  color: #1f12fd;
+  transition: all 0.3s linear;
+  border: 0;
+  font-size: 17px;
+  text-align: center;
+  text-decoration: none;
+}
+.GetInTouchBtn:hover {
+  background-color: #1f12fd;
+  color: #fff;
+}

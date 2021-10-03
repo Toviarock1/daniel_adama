@@ -1,0 +1,36 @@
+.HeroBgImage {
+  background-image: url("./../../assets/images/header-bg-shape.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 49%;
+  padding: 4%;
+}
+.HeroImage {
+  width: 100%;
+}
+.HeroTextContent h1 {
+  font-size: 65px;
+}
+.HeroTextContent p {
+  font-size: 36px;
+}
+@media screen and (max-width: 990px) {
+  .HeroTextContent h1 {
+    font-size: 43px;
+  }
+  .HeroTextContent p {
+    font-size: 25px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .HeroImage {
+    display: none;
+  }
+  .HeroRow {
+    display: block;
+  }
+  .HeroBgImage {
+    padding-top: 95px;
+    padding-bottom: 100px;
+  }
+}

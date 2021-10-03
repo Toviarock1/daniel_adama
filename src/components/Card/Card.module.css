@@ -1,0 +1,31 @@
+.CardContent {
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  margin: 10px 10px 23px;
+  border-radius: 20px;
+  background-color: #fff;
+  border: 0;
+  transition: all 0.3s linear;
+  overflow: hidden;
+}
+.CardContent:hover {
+  transform: translateY(-10px);
+}
+.CardImg {
+  border-radius: 25px 25px 0 0;
+  margin-bottom: 15px;
+  transition: all 0.3s linear;
+  max-width: 100%;
+}
+.CardContent:hover .CardImg {
+  transform: scale(1.1);
+}
+.CardTitle {
+  font-weight: 700;
+}
+.CardText {
+  margin-top: 25px;
+  color: #767676;
+  line-height: 1.6;
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+}
