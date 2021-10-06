@@ -1,4 +1,5 @@
 import React from 'react';
+//reactstrap
 import { Badge } from 'reactstrap';
 
 const cardBadge = (props) => {

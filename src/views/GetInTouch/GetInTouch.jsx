@@ -1,5 +1,7 @@
 import React from 'react';
+//react-router-hash-link
 import { HashLink as Link } from 'react-router-hash-link';
+//css modules
 import classes from './GetInTouch.module.css';
 
 const GetInTouch = () => {

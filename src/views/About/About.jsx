@@ -1,16 +1,12 @@
 import React from 'react';
-
-//reactstrap components
+//reactstrap
 import { Container, Row, Col } from 'reactstrap';
-
 //animation
 import ScrollAnim, { Parallax } from 'rc-scroll-anim';
 import QueueAnim from 'rc-queue-anim';
-
 //images
 import ProfilePic from './../../assets/images/crop_profile_pic.jpg';
-
-//css
+//css modules
 import classes from './About.module.css';
 
 const About = () => {

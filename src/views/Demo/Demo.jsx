@@ -1,8 +1,12 @@
 import React from 'react'
+//react player
 import ReactPlayer from 'react-player'
+//reactstrap
 import { Container } from 'reactstrap'
-import classes from './Demo.module.css'
+//video
 import video from './../../assets/video/3. Arrow Functions.mp4';
+//css modules
+import classes from './Demo.module.css'
 
 const Demo = () => {
     return (

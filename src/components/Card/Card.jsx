@@ -1,7 +1,11 @@
 import React from 'react';
+//reactrap
 import { Card, CardImg, CardBody, CardTitle, CardText, Button } from 'reactstrap';
+//component
 import CardBadge from './CardBadge/CardBadge'
+//image
 import ProjectImg from './../../assets/images/project-image.jpg';
+//css modules
 import classes from './Card.module.css';
 
 const card = (props) => {
