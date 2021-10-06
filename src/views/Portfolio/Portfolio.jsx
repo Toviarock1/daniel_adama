@@ -1,7 +1,7 @@
 import React from 'react'
 import { Container, Row, Col } from 'reactstrap';
 import { Parallax } from 'rc-scroll-anim';
-import Card from '../Card/Card';
+import Card from '../../components/Card/Card';
 import classes from './Portfolio.module.css';
 
 const Portfolio = () => {

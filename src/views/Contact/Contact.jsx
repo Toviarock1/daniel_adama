@@ -1,7 +1,7 @@
 import React from 'react'
 import { Container, Row, Col } from 'reactstrap'
 import { ImGithub, ImTwitter, ImLinkedin } from "react-icons/im";
-import Form from './Form/Form'
+import Form from '../../components/Form/Form'
 import classes from './Contact.module.css'
 
 const Contact = () => {

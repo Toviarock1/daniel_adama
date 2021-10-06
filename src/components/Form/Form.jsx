@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { Col, Row, Button, Form as FormStrap, FormGroup, Input, Spinner } from 'reactstrap';
 import axios from 'axios';
-import ModalUI from '../../UI/Modal/Moda';
+import ModalUI from './../Modal/Moda';
 import classes from './Form.module.css'
 
 
