@@ -26,7 +26,7 @@ const Form = () => {
             email: email,
             message: message
         }
-        axios.post('https://formsubmit.co/ajax/simontoviaadama@gmail.com', emailDetails)
+        axios.post('https://formsubmit.co/ajax/adamadaniel321@gmail.com', emailDetails)
             .then(res => {
                 setLoading(false);
                 setFirstName('');
