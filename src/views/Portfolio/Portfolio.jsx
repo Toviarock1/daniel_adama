@@ -5,13 +5,17 @@ import { Container, Row, Col } from 'reactstrap';
 import { Parallax } from 'rc-scroll-anim';
 //component
 import Card from '../../components/Card/Card';
+//images
+import RealTimeFaceRecognitionImage from './../../assets/images/real-time-face-recognition.png';
+import AIHandRecognitionSystemImage from './../../assets/images/AI-hand-recognition-system.png';
+import AIBodyDecoderSystemImage from './../../assets/images/AI-body-decoder-system.png';
 //css modules
 import classes from './Portfolio.module.css';
 
 const Portfolio = () => {
     return (
-        <div className={classes.Portfolio} id="portfolio">
-            <h2 className="Title Center">Portfolio</h2>
+        <div className={classes.Portfolio}>
+            <h2 className="Title Center"  id="portfolio">Portfolio</h2>
             <Container className={classes.PortfolioContent}>
                 <Row className="ResponsiveRow">
                     <Col className="ResponsiveMargin">
@@ -21,14 +25,13 @@ const Portfolio = () => {
                             always={false}
                         >
                             <Card
-                                title="AI Body Decoder System"
-                                text="Successfully built an Artificial Intelligent Body Decoder System
-                                using Sklearn, OpenCV, etc. to identify when a person is Sad,
-                                Happy, Neutral, Wakanda and Victorious."
-                                builtWith="Sklearn OpenCV"
-                                btn="Live Demo"
-                                btn2="View Source"
-                                location="https://github.com/danielAdama/AI_Body_Decoder"
+                                title="Realtime Face Recognition"
+                                text="Completed a real-time Face Recognition system that recognizes and tags known faces"
+                                builtWith="Dlib OpenCV Imutils"
+                                githubLocation="https://github.com/danielAdama/AI_Body_Decoder"
+                                projectImg={RealTimeFaceRecognitionImage}
+                                alt="Realtime Face Recognition"
+                                url="Realtime-Face-Recognition"
                             />
                         </Parallax>
                     </Col>
@@ -39,68 +42,14 @@ const Portfolio = () => {
                             always={false}
                         >
                             <Card
-                                title="Covid-19 Face Mask Detector"
-                                text="Successfully completed a Covid-19 face mask detector using
-                                deep learning frameworks to identify whether a person is with a
-                                face mask or not in real-time."
-                                btn="Live Demo"
-                                btn2="View Source"
-                                location="https://github.com/danielAdama/Covid-19-Face-Mask-Detection"
-                            />
-                        </Parallax>
-                    </Col>
-                    <Col>
-                        <Parallax
-                            animation={{ scale: 1 }}
-                            style={{ transform: 'scale(0)', margin: '10px auto' }}
-                            always={false}
-                        >
-                            <Card
-                                title="Keyword Extraction Project"
-                                text="Successfully built a model for automated tag extraction that
-                                simplifies the process of identifying relevant terms inside
-                                unstructured text."
-                                btn="Live Demo"
-                                btn2="View Source"
-                                location="https://github.com/danielAdama/Keyword-Extraction-project"
-                            />
-                        </Parallax>
-                    </Col>
-                </Row>
-                <Row className="ResponsiveRow">
-                    <Col className="ResponsiveMargin">
-                        <Parallax
-                            animation={{ scale: 1 }}
-                            style={{ transform: 'scale(0)', margin: '10px auto' }}
-                            always={false}
-                        >
-                            <Card
-                                title="Hand Sign Recognition"
-                                text="Successfully completed a Hand Sign Recognition System using
-                                Sklearn, OpenCV, etc. to identify gestures like Cool, Peace, Hi,
+                                title="AI Hand Gesture Recognition"
+                                text="Successfully completed a Hand Sign Recognition System to identify gestures like Cool, Peace, Hi,
                                 and One."
                                 builtWith="Sklearn OpenCV"
-                                btn="Live Demo"
-                                btn2="View Source"
-                                location="https://github.com/danielAdama/Hand_Sign_recognition"
-                            />
-                        </Parallax>
-                    </Col>
-                    <Col className="ResponsiveMargin">
-                        <Parallax
-                            animation={{ scale: 1 }}
-                            style={{ transform: 'scale(0)', margin: '10px auto' }}
-                            always={false}
-                        >
-                            <Card
-                                title="Optical Character Recognition
-                                with Pytesseract"
-                                text="Successfully achieved an Optical Character Recognition with
-                                Pytesseract to appreciate text in an image and print it out in
-                                real-time."
-                                btn="Live Demo"
-                                btn2="View Source"
-                                location="https://github.com/danielAdama/OCR_pytesseract"
+                                githubLocation="https://github.com/danielAdama/Hand_Sign_recognition"
+                                projectImg={AIHandRecognitionSystemImage}
+                                alt="AI Hand Gesture Recognition"
+                                url="AI-Hand-Gesture-Recognition"
                             />
                         </Parallax>
                     </Col>
@@ -111,13 +60,14 @@ const Portfolio = () => {
                             always={false}
                         >
                             <Card
-                                title="Sarcasm Classifier"
-                                text="Successfully finished a sarcasm sentiment analysis detector
-                                using deep learning frameworks to classify whether a sentence
-                                is sarcastic or not."
-                                btn="Live Demo"
-                                btn2="View Source"
-                                location="https://github.com/danielAdama/Sarcasm_detection"
+                                title="AI Body Decoder System"
+                                text="Successfully built an Artificial Intelligent Body Decoder System to identify when a person is Sad,
+                                Happy, Neutral, Wakanda and Victorious."
+                                builtWith="Sklearn OpenCV"
+                                githubLocation="https://github.com/danielAdama/AI_Body_Decoder"
+                                projectImg={AIBodyDecoderSystemImage}
+                                alt="AI Body Decoder System"
+                                url="AI-Body-Decoder-System"
                             />
                         </Parallax>
                     </Col>

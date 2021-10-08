@@ -1,10 +1,18 @@
+import React from 'react';
+//react-router-dom
 import { Route, Switch } from "react-router-dom";
-import "./App.css";
+//components
 import Demo from "./views/Demo/Demo";
 import Home from "./views/Home/Home";
 import Layout from "./hoc/Layout/Layout";
+//videos
+import RealtimeFaceRecognitionVideo from './assets/videos/face_recognition.mp4';
+import AIBodyDecoderSystemVideo from './assets/videos/AI-Body-Decoder-System.mov';
+import AIHandGestureRecognitionVideo from './assets/videos/AI-Hand-Gesture-Recognition.mov';
+//css
+import "./App.css";
 
-function App(props) {
+const App = (props) => {
   console.log(props);
   return (
     <Layout>
@@ -12,8 +20,19 @@ function App(props) {
         <Route exact path="/">
           <Home />
         </Route>
-        <Route exact path="/project">
-          <Demo />
+        <Route exact path="/project/Realtime-Face-Recognition">
+          <Demo video={RealtimeFaceRecognitionVideo} />
+        </Route>
+        <Route exact path="/project/AI-Hand-Gesture-Recognition">
+          <Demo video={AIHandGestureRecognitionVideo} />
+        </Route>
+        <Route exact path="/project/AI-Body-Decoder-System">
+          <Demo video={AIBodyDecoderSystemVideo} />
+        </Route>
+        <Route>
+          <div>
+            <h1>404</h1>
+          </div>
         </Route>
       </Switch>
     </Layout>

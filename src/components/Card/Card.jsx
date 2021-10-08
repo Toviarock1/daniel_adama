@@ -3,10 +3,9 @@ import React from 'react';
 import { Card, CardImg, CardBody, CardTitle, CardText, Button } from 'reactstrap';
 //component
 import CardBadge from './CardBadge/CardBadge'
-//image
-import ProjectImg from './../../assets/images/project-image.jpg';
 //css modules
 import classes from './Card.module.css';
+import { withRouter } from 'react-router';
 
 const card = (props) => {
     let builtWithInitialValue = props.builtWith;
@@ -20,7 +19,7 @@ const card = (props) => {
     return (
         <>
             <Card className={classes.CardContent}>
-                <CardImg className={classes.CardImg} top width="100%" src={ProjectImg} alt="Card image cap" />
+                <CardImg className={classes.CardImg} top width="100%" src={props.projectImg} alt={props.alt} />
                 <CardBody>
                     <CardTitle tag="h5" className={classes.CardTitle}>{props.title}</CardTitle>
                     <CardText className={classes.CardText}>{props.text}</CardText>
@@ -31,12 +30,12 @@ const card = (props) => {
                             }) : null
                         }
                     </div>
-                    <Button color="primary" className="Btn">{props.btn}</Button>
-                    <a href={props.location} className="Btn btn btn-primary">{props.btn2}</a>
+                    <Button color="primary" className="Btn" onClick={() => props.history.push(`/project/${props.url}`)}>Demo</Button>
+                    <a href={props.githubLocation} className="Btn btn btn-primary">Source</a>
                 </CardBody>
             </Card>
         </>
     )
 }
 
-export default card;
+export default withRouter(card);

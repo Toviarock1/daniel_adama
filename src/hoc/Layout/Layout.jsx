@@ -1,13 +1,17 @@
-import React from 'react'
+import React from 'react';
 //components
 import Header from '../../views/Header/Header';
 import Footer from '../../views/Footer/Footer';
+
 
 const Layout = (props) => {
     return (
         <>
             <Header />
-            {props.children}
+            <main>
+                {props.children}
+            </main>
+
             <Footer />
         </>
     )
