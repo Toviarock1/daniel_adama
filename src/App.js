@@ -13,7 +13,6 @@ import AIHandGestureRecognitionVideo from './assets/videos/AI-Hand-Gesture-Recog
 import "./App.css";
 
 const App = (props) => {
-  console.log(props);
   return (
     <Layout>
       <Switch>

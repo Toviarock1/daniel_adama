@@ -13,7 +13,6 @@ const card = (props) => {
 
     if (builtWithInitialValue) {
         cardBadgeContent = builtWithInitialValue.split(' ');
-        console.log(cardBadgeContent)
     }
 
     return (
