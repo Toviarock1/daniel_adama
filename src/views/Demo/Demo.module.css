@@ -1,8 +1,17 @@
 .Demo {
-    min-height: 750px;
-    margin: 50px;
+  min-height: 750px;
+  margin: 50px;
 }
-.Container{
-    padding-top: 100px;
-    width: 50%;
+.Container {
+  padding-top: 100px;
+  width: 50%;
+}
+
+@media screen and (max-width: 990px) {
+  .Demo {
+    min-height: 500px;
+  }
+  .Container {
+    width: auto;
+  }
 }

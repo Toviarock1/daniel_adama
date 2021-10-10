@@ -12,7 +12,7 @@ const Demo = (props) => {
         <div className={classes.Demo}>
             <Container className={classes.Container}>
                 <ReactPlayer url={props.video} width="100%" height="100%" controls={true} />
-                <Button onClick={() => props.history.goBack()}>Back</Button>
+                <Button color="primary"className="Btn" onClick={() => props.history.goBack()}>Back</Button>
             </Container>
         </div>
     )

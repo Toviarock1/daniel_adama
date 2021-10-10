@@ -34,11 +34,9 @@ const Form = () => {
                 setEmail('');
                 setMessage('');
                 setModal(true)
-                console.log(res)
             })
             .catch(err => {
                 setLoading(false);
-                console.log(err)
             })
     }
 
@@ -65,7 +63,7 @@ const Form = () => {
                 <FormGroup className={classes.FormGroup}>
                     <Input type="textarea" name="message" id="" placeholder="Message" onChange={(e) => setMessage(e.target.value)} value={message} required />
                 </FormGroup>
-                <Button className="Btn" disabled={loading}>{loading ? <Spinner color="primary" children='' /> : 'Submit'}</Button>
+                <Button color="primary" className="Btn" disabled={loading}>{loading ? <Spinner color="primary" children='' /> : 'Submit'}</Button>
             </FormStrap>
         </div>
     )
