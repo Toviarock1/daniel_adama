@@ -3381,7 +3381,7 @@
     "isobject" "^3.0.0"
     "static-extend" "^0.1.1"
 
-"classnames@^2.2.3":
+"classnames@^2.2.3", "classnames@^2.2.6":
   "integrity" "sha512-OlQdbZ7gLfGarSqxesMesDa5uz7KFbID8Kpq/SxIoNGDqY8lSYs0D+hhtBXhcdB3rcbXArFr7vlHheLk1voeNA=="
   "resolved" "https://registry.npmjs.org/classnames/-/classnames-2.3.1.tgz"
   "version" "2.3.1"
@@ -9343,7 +9343,16 @@
     "react-lifecycles-compat" "^3.0.4"
     "tween-functions" "1.x"
 
-"rc-tween-one@^2.4.0":
+"rc-texty@^0.2.0":
+  "integrity" "sha512-hGaXs8ZsSL/m7LEuCySxLWZtmFJ7bwldgtH5V90v6uBfy5eTLxSVLK5TpS2DPQHZrjl4sHXjRbKsCDk6v9x29A=="
+  "resolved" "https://registry.npmjs.org/rc-texty/-/rc-texty-0.2.0.tgz"
+  "version" "0.2.0"
+  dependencies:
+    "babel-runtime" "6.x"
+    "classnames" "^2.2.6"
+    "rc-tween-one" "^2.2.0"
+
+"rc-tween-one@^2.2.0", "rc-tween-one@^2.4.0":
   "integrity" "sha512-n4OPRLO6VMZHj61unq5KKxHMMfBz52bxob94fN3U5M9GqFg3H+T3TXnpHPnAK+cq/xBGo70ik2vB4Fpjo/txcA=="
   "resolved" "https://registry.npmjs.org/rc-tween-one/-/rc-tween-one-2.7.3.tgz"
   "version" "2.7.3"

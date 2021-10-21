@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 //react-router-hash-link
 import { HashLink as NavLink } from 'react-router-hash-link';
 //reactstrap
@@ -17,33 +17,15 @@ import CV from './../../assets/CV/Daniel Adama resume original.pdf';
 //css modules
 import classes from './Header.module.css'
 
-const Header = () => {
-  const [isOpen, setIsOpen] = useState(false);
-  const [navbar, SetNavbar] = useState(false);
-
-  const toggle = () => setIsOpen(!isOpen);
-
-  const changeBackgroundHandler = () => {
-    if (window.scrollY >= 88) {
-      SetNavbar(true);
-    } else {
-      SetNavbar(false);
-    }
-  }
-
-  useEffect(() => {
-    changeBackgroundHandler()
-    window.addEventListener('scroll', changeBackgroundHandler)
-  })
-
+const Header = (props) => {
   return (
     <div className={classes.Header}>
-      <Navbar className={navbar ? classes.NavbarScroll : classes.Navbar} color="light" light expand="md" fixed="top">
+      <Navbar className={props.navbar ? classes.NavbarScroll : classes.Navbar} color="light" light expand="md" fixed="top">
         <NavbarBrand href="/">
           <img src={Logo} className={classes.Logo} alt="company logo" />
         </NavbarBrand>
-        <NavbarToggler onClick={toggle} className={classes.NavbarBtn} />
-        <Collapse isOpen={isOpen} navbar className={classes.Collapse}>
+        <NavbarToggler onClick={props.toggle} className={classes.NavbarBtn} />
+        <Collapse isOpen={props.isOpen} navbar className={classes.Collapse}>
           <Nav className="mx-auto" navbar>
             <NavItem className={classes.NavItem}>
               <NavLink to="/#" className={classes.NavItemLink}>Home</NavLink>

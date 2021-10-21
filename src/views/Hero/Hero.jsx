@@ -3,6 +3,8 @@ import React from 'react';
 import { HashLink as Link } from 'react-router-hash-link';
 //reactstrap
 import { Col, Container, Row } from 'reactstrap';
+//animation
+import Texty from 'rc-texty';
 //svg
 import HeroImage from './../../assets/svgs/deconstructed-robot-animate.svg';
 //css modules
@@ -15,8 +17,8 @@ const Hero = () => {
                 <Row className={classes.HeroRow}>
                     <Col className="m-auto">
                         <div className={classes.HeroTextContent}>
-                            <h1>Daniel E Adama</h1>
-                            <p>Machine Learning Engineer</p>
+                            <Texty className={classes.Name}>Daniel E Adama</Texty>
+                            <Texty delay={1000} className={classes.Role}>Machine Learning Engineer</Texty>
                             <Link to="/#portfolio" className="btn btn-primary PrimaryBtn">My Work</Link>
                         </div>
                     </Col>

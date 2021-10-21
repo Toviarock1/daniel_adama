@@ -8,17 +8,17 @@
 .HeroImage {
   width: 100%;
 }
-.HeroTextContent h1 {
+.Name {
   font-size: 65px;
 }
-.HeroTextContent p {
+.Role {
   font-size: 36px;
 }
 @media screen and (max-width: 990px) {
-  .HeroTextContent h1 {
+  .Name {
     font-size: 43px;
   }
-  .HeroTextContent p {
+  .Role {
     font-size: 25px;
   }
 }
