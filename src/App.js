@@ -3,7 +3,7 @@ import React from 'react';
 import { Route, Switch } from "react-router-dom";
 //components
 import Demo from "./views/Demo/Demo";
-import Home from "./views/Home/Home";
+import Home from "./containers/Home/Home";
 import Layout from "./hoc/Layout/Layout";
 //videos
 import RealtimeFaceRecognitionVideo from './assets/videos/face_recognition.mp4';

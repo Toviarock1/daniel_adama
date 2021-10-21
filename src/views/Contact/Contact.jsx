@@ -1,46 +1,15 @@
-import React, { useState } from 'react'
+import React from 'react'
 //reactstrap
 import { Container, Row, Col } from 'reactstrap'
 //react-icons
 import { ImGithub, ImTwitter, ImLinkedin } from "react-icons/im";
-//axios
-import axios from 'axios';
 //component
 import Form from '../../components/Form/Form'
 //css modules
 import classes from './Contact.module.css'
 
-const Contact = () => {
-    const [firstName, setFirstName] = useState('');
-    const [lastName, setLastName] = useState('');
-    const [email, setEmail] = useState('');
-    const [message, setMessage] = useState('');
-    const [loading, setLoading] = useState(false)
-    const [modal, setModal] = useState(false);
-
-    const toggle = () => setModal(!modal);
-
-    const sendEmailHandler = (e) => {
-        e.preventDefault();
-        setLoading(true);
-        const emailDetails = {
-            name: `${firstName} ${lastName}`,
-            email: email,
-            message: message
-        }
-        axios.post('https://formsubmit.co/ajax/adamadaniel321@gmail.com', emailDetails)
-            .then(res => {
-                setLoading(false);
-                setFirstName('');
-                setLastName('');
-                setEmail('');
-                setMessage('');
-                setModal(true)
-            })
-            .catch(err => {
-                setLoading(false);
-            })
-    }
+const Contact = (props) => {
+    
     return (
         <div className={classes.Contact} id="contact">
             <h2 className="Title Center">Contact</h2>
@@ -70,18 +39,18 @@ const Contact = () => {
                     </Col>
                     <Col>
                         <Form 
-                            submit={sendEmailHandler} 
-                            toggle={toggle} 
-                            modal={modal} 
-                            setFirstName={(e) => setFirstName(e.target.value)} 
-                            firstName={firstName} 
-                            setLastName={(e) => setLastName(e.target.value)} 
-                            lastName={lastName} 
-                            setEmail={(e) => setEmail(e.target.value)}
-                            email={email}
-                            setMessage={(e) => setMessage(e.target.value)}
-                            message={message} 
-                            loading={loading} 
+                            submit={props.submit} 
+                            toggle={props.toggle} 
+                            modal={props.modal} 
+                            setFirstName={props.setFirstName} 
+                            firstName={props.firstName} 
+                            setLastName={props.setLastName} 
+                            lastName={props.lastName} 
+                            setEmail={props.setEmail}
+                            email={props.email}
+                            setMessage={props.setMessage}
+                            message={props.message} 
+                            loading={props.loading} 
                         />
                     </Col>
                 </Row>

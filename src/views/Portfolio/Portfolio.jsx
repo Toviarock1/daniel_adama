@@ -15,14 +15,14 @@ import classes from './Portfolio.module.css';
 const Portfolio = () => {
     return (
         <div className={classes.Portfolio}>
-            <h2 className="Title Center"  id="portfolio">Portfolio</h2>
+            <h2 className="Title Center" id="portfolio">Portfolio</h2>
             <Container className={classes.PortfolioContent}>
                 <Row className="ResponsiveRow">
                     <Col className="ResponsiveMargin">
                         <Parallax
-                            animation={{ scale: 1 }}
-                            style={{ transform: 'scale(0)', margin: '10px auto' }}
                             always={false}
+                            animation={{ x: 0, scale: 1, opacity: 1, playScale: [0.2, 0.8] }}
+                            style={{ transform: 'scale(0)', opacity: 0 }}
                         >
                             <Card
                                 title="Realtime Face Recognition"
@@ -37,9 +37,9 @@ const Portfolio = () => {
                     </Col>
                     <Col className="ResponsiveMargin">
                         <Parallax
-                            animation={{ scale: 1 }}
-                            style={{ transform: 'scale(0)', margin: '10px auto' }}
                             always={false}
+                            animation={{ x: 0, scale: 1, opacity: 1, playScale: [0.3, 0.8] }}
+                            style={{ transform: 'scale(0)', opacity: 0 }}
                         >
                             <Card
                                 title="AI Hand Gesture Recognition"
@@ -53,11 +53,11 @@ const Portfolio = () => {
                             />
                         </Parallax>
                     </Col>
-                    <Col>
+                    <Col className="ResponsiveMargin">
                         <Parallax
-                            animation={{ scale: 1 }}
-                            style={{ transform: 'scale(0)', margin: '10px auto' }}
                             always={false}
+                            animation={{ x: 0, scale: 1, opacity: 1, playScale: [0.4, 0.8] }}
+                            style={{ transform: 'scale(0)', opacity: 0 }}
                         >
                             <Card
                                 title="AI Body Decoder System"
