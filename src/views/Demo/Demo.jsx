@@ -8,14 +8,15 @@ import { Button, Container } from 'reactstrap'
 import classes from './Demo.module.css'
 
 const Demo = (props) => {
+    console.log('Demo Rendering')
     return (
         <div className={classes.Demo}>
             <Container className={classes.Container}>
                 <ReactPlayer url={props.video} width="100%" height="100%" controls={true} />
-                <Button color="primary"className="Btn" onClick={() => props.history.goBack()}>Back</Button>
+                <Button color="primary" className="Btn" onClick={() => props.history.goBack()}>Back</Button>
             </Container>
         </div>
     )
-}
+};
 
-export default withRouter(Demo)
+export default withRouter(Demo);

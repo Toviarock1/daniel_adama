@@ -11,6 +11,7 @@ import classes from './About.module.css';
 
 const About = () => {
     const ScrollOverPack = ScrollAnim.OverPack;
+    console.log('About Rendering')
     return (
         <div className={classes.About} id="about">
             <Container>
@@ -48,4 +49,4 @@ const About = () => {
     )
 }
 
-export default About
+export default React.memo(About);

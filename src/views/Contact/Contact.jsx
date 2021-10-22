@@ -13,7 +13,7 @@ import classes from './Contact.module.css'
 
 const Contact = (props) => {
     const ScrollOverPack = ScrollAnim.OverPack;
-
+    console.log('Contact Rendering')
     return (
         <div className={classes.Contact} id="contact">
             <h2 className="Title Center">Contact</h2>
@@ -78,6 +78,8 @@ const Contact = (props) => {
                                 setMessage={props.setMessage}
                                 message={props.message}
                                 loading={props.loading}
+                                content={props.content}
+                                title={props.title}
                             />
                             </TweenOne>
                         </ScrollOverPack>
@@ -88,4 +90,4 @@ const Contact = (props) => {
     )
 }
 
-export default Contact
+export default React.memo(Contact);

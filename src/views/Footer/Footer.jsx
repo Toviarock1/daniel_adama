@@ -3,6 +3,7 @@ import React from 'react'
 import classes from './Footer.module.css'
 
 const footer = () => {
+    console.log('Footer Rendering')
     return (
         <footer className={classes.Footer}>
             &copy;2021 Daniel
@@ -10,4 +11,4 @@ const footer = () => {
     )
 }
 
-export default footer
+export default React.memo(footer);

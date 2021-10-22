@@ -6,9 +6,9 @@ const ModalUI = (props) => {
     return (
         <div>
             <Modal isOpen={props.modal} toggle={props.toggle}>
-                <ModalHeader toggle={props.toggle}>Thanks For Your Email</ModalHeader>
+                <ModalHeader toggle={props.toggle}>{props.title}</ModalHeader>
                 <ModalBody>
-                    We have received your email and we will get back to you shortly
+                    {props.content}
                 </ModalBody>
             </Modal>
         </div>

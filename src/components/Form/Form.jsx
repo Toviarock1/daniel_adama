@@ -11,7 +11,7 @@ const Form = (props) => {
 
     return (
         <div className={classes.Form} >
-            <ModalUI modal={props.modal} toggle={props.toggle} />
+            <ModalUI modal={props.modal} toggle={props.toggle} title={props.title} content={props.content} />
             <h3 className={classes.Title}>Let's Get In Touch!</h3>
             <FormStrap onSubmit={props.submit}>
                 <Row>

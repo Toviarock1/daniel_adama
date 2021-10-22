@@ -16,6 +16,8 @@ const Home = () => {
     const [message, setMessage] = useState('');
     const [loading, setLoading] = useState(false)
     const [modal, setModal] = useState(false);
+    let title = 'Thank You For Your Email';
+    let content = 'We have received your email and we will get back to you shortly';
 
     const toggle = () => setModal(!modal);
 
@@ -38,6 +40,8 @@ const Home = () => {
             })
             .catch(err => {
                 setLoading(false);
+                title = 'Oops Something Went Wrong'
+                content = 'please check your network and try again';
             })
     }
 
@@ -59,10 +63,12 @@ const Home = () => {
                 email={email}
                 setMessage={(e) => setMessage(e.target.value)}
                 message={message}
-                loading={loading} 
+                loading={loading}
+                content={content}
+                title={title} 
             />
         </>
     )
 }
 
-export default Home
+export default React.memo(Home);

@@ -11,6 +11,7 @@ import HeroImage from './../../assets/svgs/deconstructed-robot-animate.svg';
 import classes from './Hero.module.css';
 
 const Hero = () => {
+    console.log('Hello Rendering')
     return (
         <div className={classes.Hero}>
             <Container className={classes.HeroBgImage}>
@@ -31,4 +32,4 @@ const Hero = () => {
     )
 }
 
-export default Hero;
+export default React.memo(Hero);

@@ -18,6 +18,7 @@ import CV from './../../assets/CV/Daniel Adama resume original 1.pdf';
 import classes from './Header.module.css'
 
 const Header = (props) => {
+  console.log('Header Rendering')
   return (
     <div className={classes.Header}>
       <Navbar className={props.navbar ? classes.NavbarScroll : classes.Navbar} color="light" light expand="md" fixed="top">
@@ -51,4 +52,4 @@ const Header = (props) => {
   );
 }
 
-export default Header;
+export default React.memo(Header);

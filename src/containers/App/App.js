@@ -45,7 +45,7 @@ const App = () => {
   if (isLoading) {
     return null;
   }
-
+  console.log('App Rendering');
   return (
     <Layout toggle={toggle} navbar={navbar} isOpen={isOpen}>
       <Switch>
