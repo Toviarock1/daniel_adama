@@ -4,8 +4,7 @@ import { Container, Row, Col } from 'reactstrap'
 //react-icons
 import { ImGithub, ImTwitter, ImLinkedin } from "react-icons/im";
 //animation
-import ScrollAnim, { Parallax } from 'rc-scroll-anim';
-import QueueAnim from 'rc-queue-anim';
+import ScrollAnim from 'rc-scroll-anim';
 import TweenOne from 'rc-tween-one';
 //component
 import Form from '../../components/Form/Form'
@@ -64,7 +63,7 @@ const Contact = (props) => {
                                     duration: 1000,
                                     opacity:1
                                 }}
-                                style={{ transform: 'translateX(100px)', opacity: 0 }}
+                                style={{ transform: 'translateX(-100px)', opacity: 0 }}
                             >
                             <Form
                                 submit={props.submit}
