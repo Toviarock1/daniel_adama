@@ -24,7 +24,7 @@ const App = (props) => {
       const el = document.querySelector(".loader-container");
       if(el) {
         el.remove();
-        setLoading(!isLoading)
+       setTimeout(() => setLoading(!isLoading), 2000)
       }
     }
   }, [isLoading]);
