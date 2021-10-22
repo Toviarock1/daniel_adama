@@ -33,11 +33,12 @@ const App = () => {
   });
 
   useEffect(() => {
-    window.onload = () => {
+    document.onreadystatechange = () => {
       const el = document.querySelector(".loader-container");
-      if (el) {
+      if (document.readyState === 'complete') {
         el.remove();
-        setTimeout(() => setLoading(!isLoading), 2000);
+        setLoading(!isLoading);
+        console.log(document.readyState)
       }
     };
   }, [isLoading]);
