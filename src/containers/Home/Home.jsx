@@ -16,8 +16,9 @@ const Home = () => {
     const [message, setMessage] = useState('');
     const [loading, setLoading] = useState(false)
     const [modal, setModal] = useState(false);
-    let title = 'Thank You For Your Email';
-    let content = 'We have received your email and we will get back to you shortly';
+    const [error, setError] = useState(false);
+    let title = error ? 'Oops Something Went Wrong' : 'Thank You For Your Email';
+    let content = error ? 'please check your internet connection and try again' : 'We have received your email we will get back to you shortly';
 
     const toggle = () => setModal(!modal);
 
@@ -35,13 +36,13 @@ const Home = () => {
                 setFirstName('');
                 setLastName('');
                 setEmail('');
-                setMessage('');
-                setModal(true)
+                setMessage('');            
+                setModal(true);
             })
             .catch(err => {
                 setLoading(false);
-                title = 'Oops Something Went Wrong'
-                content = 'please check your network and try again';
+                setError(true);
+                setModal(true);
             })
     }
 
