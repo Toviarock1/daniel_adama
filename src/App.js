@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 //react-router-dom
 import { Route, Switch } from "react-router-dom";
 //components
@@ -13,6 +13,26 @@ import AIHandGestureRecognitionVideo from './assets/videos/AI-Hand-Gesture-Recog
 import "./App.css";
 
 const App = (props) => {
+  const [isLoading, setLoading] = useState(true);
+
+  // const fakeRequest = () => {
+  //   return new Promise(resolve => setTimeout(() => resolve(), 2500))
+  // };
+
+  useEffect(() => {
+    window.onload = () => {
+      const el = document.querySelector(".loader-container");
+      if(el) {
+        el.remove();
+        setLoading(!isLoading)
+      }
+    }
+  }, [isLoading]);
+
+  if(isLoading) {
+    return null
+  }
+
   return (
     <Layout>
       <Switch>
