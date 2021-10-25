@@ -31,7 +31,6 @@ const App = () => {
     window.addEventListener("scroll", changeBackgroundHandler);
   });
 
-  console.log('App Rendering');
   return (
     <Layout toggle={toggle} navbar={navbar} isOpen={isOpen}>
       <Switch>
