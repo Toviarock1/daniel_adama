@@ -8,7 +8,6 @@ import { Button, Container } from 'reactstrap'
 import classes from './Demo.module.css'
 
 const Demo = (props) => {
-    console.log('Demo Rendering')
     return (
         <div className={classes.Demo}>
             <Container className={classes.Container}>

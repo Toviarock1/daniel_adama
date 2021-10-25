@@ -5,7 +5,6 @@ import { HashLink as Link } from 'react-router-hash-link';
 import classes from './GetInTouch.module.css';
 
 const GetInTouch = () => {
-    console.log('GetInTouch Rendering')
     return (
         <div className={classes.GetInTouch}>
             <p>I'm extremely passionate about software development in all it's forms</p>

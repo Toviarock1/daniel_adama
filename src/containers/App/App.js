@@ -13,7 +13,6 @@ import AIHandGestureRecognitionVideo from "./../../assets/videos/AI-Hand-Gesture
 import "./App.css";
 
 const App = () => {
-  const [isLoading, setLoading] = useState(true);
   const [isOpen, setIsOpen] = useState(false);
   const [navbar, SetNavbar] = useState(false);
 
@@ -32,20 +31,6 @@ const App = () => {
     window.addEventListener("scroll", changeBackgroundHandler);
   });
 
-  useEffect(() => {
-    document.onreadystatechange = () => {
-      const el = document.querySelector(".loader-container");
-      if (document.readyState === 'complete') {
-        el.remove();
-        setLoading(!isLoading);
-        console.log(document.readyState)
-      }
-    };
-  }, [isLoading]);
-
-  if (isLoading) {
-    return null;
-  }
   console.log('App Rendering');
   return (
     <Layout toggle={toggle} navbar={navbar} isOpen={isOpen}>

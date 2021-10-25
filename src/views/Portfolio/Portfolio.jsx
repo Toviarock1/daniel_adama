@@ -13,7 +13,6 @@ import AIBodyDecoderSystemImage from './../../assets/images/AI-body-decoder-syst
 import classes from './Portfolio.module.css';
 
 const Portfolio = () => {
-    console.log('Portfolio Rendering');
     return (
         <div className={classes.Portfolio}>
             <h2 className="Title Center" id="portfolio">Portfolio</h2>
