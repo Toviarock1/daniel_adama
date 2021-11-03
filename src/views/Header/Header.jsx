@@ -13,7 +13,7 @@ import {
 //image
 import Logo from './../../assets/images/robot-removebg-preview.png';
 //CV
-import CV from './../../assets/CV/Daniel Adama resume original 1.pdf';
+import CV from './../../assets/CV/Daniel Adama resume original 1(1).pdf';
 //css modules
 import classes from './Header.module.css'
 
