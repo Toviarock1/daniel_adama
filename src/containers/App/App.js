@@ -46,6 +46,9 @@ const App = () => {
         <Route exact path="/project/AI-Body-Decoder-System">
           <Demo video={AIBodyDecoderSystemVideo} />
         </Route>
+        <Route exact path="/project/AI-based-Sentiment-Analyser">
+          <Demo video={AIBodyDecoderSystemVideo} />
+        </Route>
         <Route>
           <div>
             <h1>404</h1>

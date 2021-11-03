@@ -9,6 +9,7 @@ import Card from '../../components/Card/Card';
 import RealTimeFaceRecognitionImage from './../../assets/images/real-time-face-recognition.png';
 import AIHandRecognitionSystemImage from './../../assets/images/AI-hand-recognition-system.png';
 import AIBodyDecoderSystemImage from './../../assets/images/AI-body-decoder-system.png';
+import AIBasedSentimentAnalyserImage from './../../assets/images/Screenshot (726).png';
 //css modules
 import classes from './Portfolio.module.css';
 
@@ -17,7 +18,7 @@ const Portfolio = () => {
         <div className={classes.Portfolio}>
             <h2 className="Title Center" id="portfolio">Portfolio</h2>
             <Container className={classes.PortfolioContent}>
-                <Row className="ResponsiveRow">
+                <Row className={`ResponsiveRow ${classes.Row}`}>
                     <Col className="ResponsiveMargin">
                         <Parallax
                             always={false}
@@ -56,7 +57,7 @@ const Portfolio = () => {
                     <Col className="ResponsiveMargin">
                         <Parallax
                             always={false}
-                            animation={{ x: 0, scale: 1, opacity: 1, playScale: [0.4, 0.8] }}
+                            animation={{ x: 0, scale: 1, opacity: 1, playScale: [0.3, 0.8] }}
                             style={{ transform: 'scale(0)', opacity: 0 }}
                         >
                             <Card
@@ -68,6 +69,23 @@ const Portfolio = () => {
                                 projectImg={AIBodyDecoderSystemImage}
                                 alt="AI Body Decoder System"
                                 url="AI-Body-Decoder-System"
+                            />
+                        </Parallax>
+                    </Col>
+                    <Col className="ResponsiveMargin">
+                        <Parallax
+                            always={false}
+                            animation={{ x: 0, scale: 1, opacity: 1, playScale: [0.3, 0.8] }}
+                            style={{ transform: 'scale(0)', opacity: 0 }}
+                        >
+                            <Card
+                                title="AI-based Sentiment Analyser deployed using Flask "
+                                text="Completed and deployed an AI-based Sentiment Analyser on Heroku. The application takes a user’s review as input and then measures the attitude/sentiment of that user towards the aspect of a movie which can either be Positive or Negative."
+                                builtWith="Nltk Sklearn Flask"
+                                githubLocation="https://github.com/danielAdama/sentiment_app"
+                                projectImg={AIBasedSentimentAnalyserImage}
+                                alt="AI-based Sentiment Analyser"
+                                url="AI-based-Sentiment-Analyser"
                             />
                         </Parallax>
                     </Col>

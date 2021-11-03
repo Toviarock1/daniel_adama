@@ -5,5 +5,7 @@
 .PortfolioContent {
   margin-top: 50px !important;
 }
-
-
+.Row {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
