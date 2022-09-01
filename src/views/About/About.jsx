@@ -33,7 +33,7 @@ const About = () => {
             <ScrollOverPack always={false}>
               <QueueAnim delay={400}>
                 <p key="a" className={classes.Description}>
-                  I am a Machine Learning Engineer with 2.3+ years of experience
+                  I am a Machine Learning Engineer with 3+ years of experience
                   in Data Analytics and Computer Vision, proficient Python and
                   SQL skills. He has expertise in Data preparation/cleansing,
                   Model building, Model Deployment, and evaluating algorithms to

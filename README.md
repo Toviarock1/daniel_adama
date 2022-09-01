@@ -20,7 +20,7 @@ npm start
 
 
 ## Live version
-url: https://daniel-adama.vercel.app
+url: https://danieladama.vercel.app
 
 ## Contributing
 
